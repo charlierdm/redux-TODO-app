@@ -1,4 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit'
-import {addTodo} from './addTodoReducer'
+import {reducer} from './reducer'
 
-export const store = configureStore({reducer: addTodo})
+const store = configureStore({reducer: reducer})
+
+export default store

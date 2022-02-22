@@ -2,7 +2,7 @@ import {createSlice} from "@reduxjs/toolkit"
 
 const initialState = []
 
-const addTodo = createSlice({
+const addTodoSlice = createSlice({
   name: 'todos',
   initialState,
   reducers: {
@@ -13,5 +13,5 @@ const addTodo = createSlice({
   }
 })
 
-export const {addTodos} = addTodo.actions
-export default addTodo.reducer
+export const {addTodo} = addTodoSlice.actions
+export const reducer = addTodoSlice.reducer
