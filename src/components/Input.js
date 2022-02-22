@@ -1,24 +1,46 @@
 import React, {useState} from "react"
+import {connect, useDispatch} from 'react-redux'
+
+import {addTodo} from "../redux/todoSlice"
+
+const mapStateToProps = (state) => {
+  return {
+    todos: state,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addTodo: (obj) => dispatch(addTodo(obj))
+  }
+}
 
 export const Input = () => {
   const [todo, setTodo] = useState('')
+  const dispatch = useDispatch()
 
-  const addTodo = (e) => {
-    e.preventDefault()
+  const addTodo = () => {
+    dispatch(addTodo({
+      item: todo,
+      complete: false,
+      id: Math.floor(Math.random() * 1000),
+    }))
     setTodo('')
   }
 
   return (
-    <form className="Input">
+    <div className="Input">
       <input 
         type='text' 
-        onChange={(e) => setTodo(e.target.value)}
+        onChange={e => setTodo(e.target.value)}
         value={todo} 
         placeholder='enter a new todo...'
       />
-      <button type='submit' onClick={(e) => addTodo(e)}>
+      <button onClick={() => addTodo()}>
         Add Todo
       </button>
-    </form>
+    </div>
   )
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Input);

@@ -23,6 +23,7 @@ h3 {
   height: 50px;
   width: 50%;
   min-height: 5rem;
+  min-width: fit-content;
   border-radius: 12px;
   background-color: #fff;
   display: flex;
