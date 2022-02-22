@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #7c5fb1;
+  margin-top: 0;
+}
+
+h3 {
+  color: #7c5fb1;
+}
+
+.ReduxLogo {
+  width: 150px;
+  margin: -45px 0 -20px 0;
+}
