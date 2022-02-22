@@ -53,6 +53,9 @@ button {
   font-weight: 600;
   margin-right: 2rem;
   border: 2px solid #dadada;
+  background-color: #dadada;
+  cursor: pointer;
+  transition: opacity 0.2s ease-out;
 }
 
 button:hover {
