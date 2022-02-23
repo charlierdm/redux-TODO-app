@@ -8,18 +8,19 @@ const TodoInput = () => {
   const dispatch = useDispatch()
 
   return (
-    <form className="Input" onSubmit={e => {
+    <form className='InputForm' onSubmit={e => {
       e.preventDefault()
       dispatch(addTodo(todo))
       setTodo('')
     }}>
-      <input 
+      <input
+        className='InputTodo'
         type='text' 
         onChange={e => setTodo(e.target.value)}
         value={todo} 
         placeholder='enter a new todo...'
       />
-      <button type='submit'>
+      <button className='SubmitTodo' type='submit'>
         Add Todo
       </button>
     </form>
