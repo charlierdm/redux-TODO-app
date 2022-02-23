@@ -6,13 +6,18 @@ import {addTodo} from "../actions"
 const TodoInput = () => {
   const [todo, setTodo] = useState('')
   const dispatch = useDispatch()
+  
+  const handleSubmit = e => {
+    e.preventDefault()
+    dispatch(addTodo(todo))
+    setTodo('')
+  }
 
   return (
-    <form className='InputForm' onSubmit={e => {
-      e.preventDefault()
-      dispatch(addTodo(todo))
-      setTodo('')
-    }}>
+    <form 
+      className='InputForm' 
+      onSubmit={e => handleSubmit(e)}
+    >
       <input
         className='InputTodo'
         type='text' 
