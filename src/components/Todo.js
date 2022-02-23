@@ -8,11 +8,15 @@ const Todo = ({text, id, completed}) => {
   return (
     <li className='Todo'>
       {text}
+      <label className='CheckContainer'>
       <input 
         type='checkbox'
         defaultChecked={completed}
         onClick={() => dispatch(toggleTodo(id))}
       />
+      <span className='CheckMark' />
+      </label>
+      
     </li>
   )
 }

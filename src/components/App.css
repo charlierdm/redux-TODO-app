@@ -87,7 +87,77 @@ button:hover {
 }
 
 .Todo {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   color: #7c5fb1;
   padding: 0.4rem;
+  border: 2px solid #7c5fb1;
+  border-radius: 10px;
+  display: flex;
+  background-color: #fff;
+  width: 30rem;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+
+.TodoCheckbox {
+  border: none;
+  background-color: #7c5fb1;
+}
+
+.CheckContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.CheckContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.CheckMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #dadada;
+  border-radius: 5px;
+}
+
+.CheckContainer input:checked ~ .CheckMark {
+  background-color: #7c5fb1;
+}
+
+.CheckMark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.CheckContainer input:checked ~ .CheckMark:after {
+  display: block;
+}
+
+.CheckContainer .CheckMark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
