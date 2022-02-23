@@ -10,6 +10,7 @@ const Todo = ({text, id, completed}) => {
       {text}
       <div className='SvgCheckboxWrapper'>
         <img src='/edit.svg' alt='edit pencil' />
+        <img src='delete.svg' alt='delete bin' />
         <label className='CheckContainer'>
           <input 
             type='checkbox'
