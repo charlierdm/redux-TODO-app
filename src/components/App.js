@@ -6,7 +6,6 @@ import TodoList from './TodoList'
 
 import './App.css'
 
-
 const App = () => {
   return (
     <div className="App">
