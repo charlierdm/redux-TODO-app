@@ -14,8 +14,10 @@ export const App = () => {
   return (
     <div className="App">
       <Header />
-      <TodoList todos={todos} />
-      <TodoInput />
+      <div className='ListInputWrapper'>
+        <TodoList todos={todos} />
+        <TodoInput />
+      </div>
     </div>
   );
 }

@@ -3,8 +3,8 @@
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  display: grid;
-  place-items: centre;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
@@ -64,11 +64,25 @@ button:hover {
   opacity: 70%;
 }
 
+.ListInputWrapper {
+  width: 40rem;
+  margin: 0 auto;
+}
+
 .TodoList {
+  padding: 0.5rem;
+  margin: 2rem auto 5rem;
   list-style: none;
+  height: 18rem;
+  width: 40rem;
+  overflow: scroll;
+  scrollbar-color: #7c5fb1;
+  border: 3px solid #7c5fb1;
+  border-radius: 10px;
 }
 
 .Todo {
   font-size: 1.2rem;
   color: #7c5fb1;
+  padding: 0.4rem;
 }
