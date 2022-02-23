@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {connect, useDispatch} from "react-redux"
+import {useDispatch} from "react-redux"
 import {addTodo} from "../actions"
 
 
@@ -33,4 +33,4 @@ const TodoInput = () => {
   )
 }
 
-export default connect()(TodoInput)
+export default TodoInput
