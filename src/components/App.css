@@ -53,6 +53,7 @@ button {
   font-size: 1rem;
   font-weight: 600;
   margin-right: 2rem;
+  padding: 14px;  
   border: 2px solid #dadada;
   background-color: #dadada;
   cursor: pointer;
