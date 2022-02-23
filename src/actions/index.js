@@ -3,6 +3,7 @@ let nextId = 0
 export const actionTypes = {
   ADD_TODO: 'ADD_TODO',
   TOGGLE_TODO: 'TOGGLE_TODO',
+  EDIT_TODO: 'EDIT_TODO',
 }
 
 export const addTodo = text => ({
@@ -13,5 +14,10 @@ export const addTodo = text => ({
 
 export const toggleTodo = id => ({
   type: actionTypes.TOGGLE_TODO,
+  id
+})
+
+export const editTodo = id => ({
+  type: actionTypes.EDIT_TODO,
   id
 })

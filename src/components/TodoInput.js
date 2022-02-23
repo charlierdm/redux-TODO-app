@@ -9,6 +9,7 @@ const TodoInput = () => {
   
   const handleSubmit = e => {
     e.preventDefault()
+    if (todo === '') return
     dispatch(addTodo(todo))
     setTodo('')
   }
