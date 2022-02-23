@@ -8,7 +8,7 @@ import TodoList from './TodoList'
 import './App.css'
 
 
-export const App = () => {
+const App = () => {
   const todos = useSelector(state => state.todos)
 
   return (
@@ -21,3 +21,5 @@ export const App = () => {
     </div>
   );
 }
+
+export default App

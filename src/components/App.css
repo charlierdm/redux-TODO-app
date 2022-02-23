@@ -88,6 +88,7 @@ button:hover {
   scrollbar-color: #7c5fb1;
   border: 3px solid #7c5fb1;
   border-radius: 10px;
+  background-color: #fff;
 }
 
 .Todo {
@@ -98,7 +99,7 @@ button:hover {
   border: 2px solid #7c5fb1;
   border-radius: 10px;
   display: flex;
-  background-color: #fff;
+  background-color: #dadada;
   width: 30rem;
   margin: 1rem auto;
   justify-content: space-between;
@@ -144,7 +145,7 @@ button:hover {
   left: 0;
   height: 27px;
   width: 27px;
-  background-color: #dadada;
+  background-color: #fff;
   border-radius: 5px;
 }
 
