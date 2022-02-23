@@ -104,6 +104,14 @@ button:hover {
   justify-content: space-between;
 }
 
+.Todo img {
+  margin-right: 1rem;
+}
+
+.SvgCheckboxWrapper {
+  display: flex;
+}
+
 .TodoCheckbox {
   border: none;
   background-color: #7c5fb1;

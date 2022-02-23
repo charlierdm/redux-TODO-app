@@ -1,6 +1,6 @@
 import React from "react"
 import {connect, useDispatch} from 'react-redux'
-import {toggleTodo} from '../actions'
+import {toggleTodo, editTodo} from '../actions'
 
 const Todo = ({text, id, completed}) => {
   const dispatch = useDispatch()
@@ -8,15 +8,17 @@ const Todo = ({text, id, completed}) => {
   return (
     <li className='Todo'>
       {text}
-      <label className='CheckContainer'>
-      <input 
-        type='checkbox'
-        defaultChecked={completed}
-        onClick={() => dispatch(toggleTodo(id))}
-      />
-      <span className='CheckMark' />
-      </label>
-      
+      <div className='SvgCheckboxWrapper'>
+        <img src='/edit.svg' alt='edit pencil' />
+        <label className='CheckContainer'>
+          <input 
+            type='checkbox'
+            defaultChecked={completed}
+            onClick={() => dispatch(toggleTodo(id))}
+          />
+          <span className='CheckMark' />
+        </label>
+      </div> 
     </li>
   )
 }

@@ -17,7 +17,8 @@ export const toggleTodo = id => ({
   id
 })
 
-export const editTodo = id => ({
+export const editTodo = (id, text) => ({
   type: actionTypes.EDIT_TODO,
+  text: text,
   id
 })
