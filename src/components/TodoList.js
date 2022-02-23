@@ -1,20 +1,20 @@
 import React from "react"
-import {connect} from "react-redux"
+import {useSelector} from "react-redux"
 
 import Todo from './Todo'
 
-const TodoList = ({todos}) => 
-  <ul className='TodoList'>
-    {todos.map(todo => (
-      <Todo 
-        key={todo.id}
-        {...todo}
-      />
-    ))}
-  </ul>
+const TodoList = () => {
+  const todos = useSelector(state => state.todos)
+  return (
+    <ul className='TodoList'>
+      {todos.map(todo => (
+        <Todo 
+          key={todo.id}
+          {...todo}
+        />
+      ))}
+    </ul>
+  )
+}
 
-const mapStateToProps = state => ({
-  todos: state.todos
-})
-
-export default connect(mapStateToProps)(TodoList)
+export default TodoList
