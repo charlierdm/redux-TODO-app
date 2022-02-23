@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Header = () => {
+const Header = () => {
   return (
     <div>
       <img src='/logo192.png' alt='redux logo' className='ReduxLogo' />
@@ -8,3 +8,5 @@ export const Header = () => {
     </div>
   )
 }
+
+export default Header

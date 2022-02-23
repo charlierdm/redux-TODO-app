@@ -1,15 +1,21 @@
 import React from 'react'
+import {useSelector} from 'react-redux'
 
-import {Header} from './Header'
+import Header from './Header'
 import TodoInput from './TodoInput'
+import TodoList from './TodoList'
 
 import './App.css'
 
+
 export const App = () => {
+  const todos = useSelector(state => state.todos)
+
   return (
     <div className="App">
       <Header />
       <TodoInput />
+      <TodoList todos={todos} />
     </div>
   );
 }
