@@ -14,8 +14,8 @@ export const App = () => {
   return (
     <div className="App">
       <Header />
-      <TodoInput />
       <TodoList todos={todos} />
+      <TodoInput />
     </div>
   );
 }

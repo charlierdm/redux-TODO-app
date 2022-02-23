@@ -4,8 +4,8 @@ export const actionTypes = {
   ADD_TODO: 'ADD_TODO'
 }
 
-export const addTodo = todo => ({
+export const addTodo = text => ({
   type: actionTypes.ADD_TODO,
   id: nextId++,
-  todo,
+  text,
 })

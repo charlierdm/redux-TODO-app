@@ -63,3 +63,12 @@ button {
 button:hover {
   opacity: 70%;
 }
+
+.TodoList {
+  list-style: none;
+}
+
+.Todo {
+  font-size: 1.2rem;
+  color: #7c5fb1;
+}
