@@ -1,6 +1,6 @@
 import React from "react"
 import {connect, useDispatch} from 'react-redux'
-import {toggleTodo, editTodo} from '../actions'
+import {toggleTodo, editTodo, deleteTodo} from '../actions'
 
 const Todo = ({text, id, completed}) => {
   const dispatch = useDispatch()
@@ -10,7 +10,7 @@ const Todo = ({text, id, completed}) => {
       {text}
       <div className='SvgCheckboxWrapper'>
         <img src='/edit.svg' alt='edit pencil' />
-        <img src='delete.svg' alt='delete bin' />
+        <img src='delete.svg' alt='delete bin' onClick={() => dispatch(deleteTodo(id))} />
         <label className='CheckContainer'>
           <input 
             type='checkbox'
