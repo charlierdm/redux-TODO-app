@@ -20,7 +20,6 @@ export const toggleTodo = id => ({
 
 export const editTodo = (id, text) => ({
   type: actionTypes.EDIT_TODO,
-  text: text,
   id
 })
 

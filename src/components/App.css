@@ -80,33 +80,36 @@ button:hover {
 
 .TodoList {
   padding: 0.5rem;
-  margin: 2rem auto 5rem;
+  margin: 2rem auto 3rem;
   list-style: none;
-  height: 20rem;
+  height: 22rem;
   width: 40rem;
   overflow: scroll;
   scrollbar-color: #7c5fb1;
-  border: 3px solid #7c5fb1;
+  border: 3px solid #fff;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #d9d3e6;
 }
 
 .Todo {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: #7c5fb1;
   padding: 0.4rem;
   border: 2px solid #7c5fb1;
   border-radius: 10px;
   display: flex;
   background-color: #dadada;
+  height: 3rem;
   width: 30rem;
   margin: 1rem auto;
   justify-content: space-between;
+  align-items: center;
 }
 
 .Todo img {
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .SvgCheckboxWrapper {
