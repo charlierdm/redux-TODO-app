@@ -16,7 +16,7 @@ const todos = (state = [], action) => {
         ? {...todo, completed: !todo.completed}
         : todo
       )
-    case 'SELECT_EDIT_TODO':
+    case 'EDIT_TODO':
       return state.map(todo =>
         (todo.id === action.id)
         ? {...todo, edit: !todo.edit}
