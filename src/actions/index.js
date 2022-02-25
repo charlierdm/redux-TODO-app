@@ -6,9 +6,6 @@ export const actionTypes = {
   SELECT_EDIT_TODO: 'SELECT_EDIT_TODO',
   EDIT_TODO: 'EDIT_TODO',
   DELETE_TODO: 'DELETE_TODO',
-}
-
-export const filterTypes = {
   SET_VISIBILITY_FILTER: 'SET_VISIBILITY_FILTER',
   SHOW_ALL: 'SHOW_ALL',
   SHOW_COMPLETED: 'SHOW_COMPLETED',
@@ -37,6 +34,6 @@ export const deleteTodo = id => ({
 })
 
 export const setVisibilityFilter = filter => ({
-  type: filterTypes.SET_VISIBILITY_FILTER,
+  type: actionTypes.SET_VISIBILITY_FILTER,
   filter,
 })
