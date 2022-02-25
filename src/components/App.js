@@ -5,6 +5,7 @@ import TodoInput from './TodoInput'
 import TodoList from './TodoList'
 
 import './App.css'
+import FilterButtons from './FilterButtons'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <div className='ListInputWrapper'>
         <TodoList />
         <TodoInput />
+        <FilterButtons />
       </div>
     </div>
   );

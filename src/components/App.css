@@ -64,6 +64,29 @@ h3 {
   transition: opacity 0.2s ease-out;
 }
 
+.FilterButton {
+  font-weight: 550;
+  font-size: 1.1rem;
+  padding: 14px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease-out;
+  outline-width: 0;
+  color: #7c5fb1;
+  border-radius: 10px;
+  padding: 0.3rem;
+  min-height: 3rem;
+  min-width: 11rem;
+  margin: 1rem 2rem;
+}
+
+.FilterButtonWrapper {
+  display: flex;
+  min-width: 30rem;
+  justify-content: space-between;
+}
+
 button:hover {
   opacity: 70%;
 }
