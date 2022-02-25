@@ -8,6 +8,13 @@ export const actionTypes = {
   DELETE_TODO: 'DELETE_TODO',
 }
 
+export const filterTypes = {
+  SET_VISIBILITY_FILTER: 'SET_VISIBILITY_FILTER',
+  SHOW_ALL: 'SHOW_ALL',
+  SHOW_COMPLETED: 'SHOW_COMPLETED',
+  CLEAR_COMPLETED: 'CLEAR_COMPLETED',
+}
+
 export const addTodo = text => ({
   type: actionTypes.ADD_TODO,
   id: nextId++,
@@ -27,4 +34,9 @@ export const editTodo = id => ({
 export const deleteTodo = id => ({
   type: actionTypes.DELETE_TODO,
   id
+})
+
+export const setVisibilityFilter = filter => ({
+  type: filterTypes.SET_VISIBILITY_FILTER,
+  filter,
 })
