@@ -1,5 +1,5 @@
 import React from "react"
-import {connect, useDispatch} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import {toggleTodo, editTodo, deleteTodo} from '../actions'
 
 const Todo = ({text, id, completed}) => {
@@ -24,4 +24,4 @@ const Todo = ({text, id, completed}) => {
   )
 }
 
-export default connect()(Todo)
+export default Todo
