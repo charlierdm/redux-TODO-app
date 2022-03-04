@@ -1,12 +1,12 @@
 import React, {useState} from "react"
-import {useDispatch} from "react-redux"
-import {addTodo} from "../actions"
+import {useSelector, useDispatch} from "react-redux"
+import {addTodo, deleteTodo} from "../actions"
 
 
 const TodoInput = () => {
   const [todo, setTodo] = useState('')
   const dispatch = useDispatch()
-  
+
   const handleSubmit = e => {
     e.preventDefault()
     if (todo === '') return

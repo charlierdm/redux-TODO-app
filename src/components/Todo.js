@@ -1,6 +1,6 @@
 import React from "react"
 import {useDispatch} from 'react-redux'
-import {toggleTodo, editTodo, deleteTodo} from '../actions'
+import {toggleTodo, deleteTodo} from '../actions'
 
 const Todo = ({text, id, completed}) => {
   const dispatch = useDispatch()
@@ -9,7 +9,6 @@ const Todo = ({text, id, completed}) => {
     <li className='Todo'>
       {text}
       <div className='SvgCheckboxWrapper'>
-        <img src='edit.svg' alt='edit pencil' onClick={() => dispatch(editTodo(id))}/>
         <img src='delete.svg' alt='delete bin' onClick={() => dispatch(deleteTodo(id))} />
         <label className='CheckContainer'>
           <input 
